@@ -1,7 +1,7 @@
 import Wrestlers from './wrestlers'
 import '../App.css';
 
-function wrestlerList(props){
+function WrestlerList(props){
     const allWrestlers = props.wrestlers.map(wrestlers => {
         return (
             <Wrestlers
@@ -20,4 +20,4 @@ function wrestlerList(props){
     )
 }
 
-export default wrestlerList
+export default WrestlerList
