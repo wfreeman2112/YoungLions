@@ -8,7 +8,7 @@ function Wrestlers(props){
             <h1>{props.name}</h1>
             <h1>{props.birthday}</h1>
             <h1>{props.finisher}</h1>
-            <button>add to Favorites</button>
+            <button onClick = {() => props.addFavorite(props.id)}>add to Favorites</button>
         </div>
 
     )
