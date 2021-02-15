@@ -4,7 +4,7 @@ function Favorite(props){
     return (
       <div>
         <h2>Favorite Wrestlers</h2>
-        {props.favoriteList.map(faveWrestler => {
+        {props.faves.map(faveWrestler => {
       return (
         <li>{faveWrestler.name}</li>
       )} 
