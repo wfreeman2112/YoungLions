@@ -3,6 +3,7 @@ import './App.css';
 import Welcome from './components/Welcome';
 import { wrestlerData } from './Data/wrestlerData'
 import WrestlerList from './components/wrestlerList'
+import Favorite from "./components/Favorite";
 
 function App() {
    
@@ -25,10 +26,21 @@ function App() {
   //   updatedFavorites.push(foundPlayer)
   //   setFavorites(updatedFavorites)
   return (
+    // <div className="container">
+    //   <Welcome />
+    //   <WrestlerList favoriteList = {favoriteList}  wrestlers={wrestlerData} addFavorite = {addFavorite} />
+    //   <Favorite />
     <div className="container">
-      <Welcome />
-      <WrestlerList favoriteList = {favoriteList}  wrestlers={wrestlerData} addFavorite = {addFavorite} />
-     
+    <Welcome />
+    <WrestlerList 
+    wrestlers={wrestlerData} 
+    addFavorite={addFavorite}
+    />
+    
+    <Favorite 
+      faves={favoriteList}
+    />
+    
     </div>
   );
 }
