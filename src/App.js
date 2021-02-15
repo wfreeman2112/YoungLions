@@ -9,7 +9,6 @@ function App() {
    
   const [favoriteList, setFavoriteList] = useState([])
     const addFavorite = (id) => {
-      console.log('hi friends!', id)
       const faveWrestler = wrestlerData.find(wrestler => wrestler.id === id)
       console.log(faveWrestler)
      
@@ -19,12 +18,6 @@ function App() {
         console.log(favoriteList)
       }
        
-      // const addFavorite = (id) => {
-        //   console.log('hi friends', id)
-  //   const foundPlayer = playerData.find(player => player.id === id )
-  //   const updatedFavorites = favorites.slice()
-  //   updatedFavorites.push(foundPlayer)
-  //   setFavorites(updatedFavorites)
   return (
     // <div className="container">
     //   <Welcome />
